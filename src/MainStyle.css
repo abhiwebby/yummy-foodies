@@ -1247,7 +1247,33 @@ footer .text-muted {
     border-radius: 0px 50px 50px 0px !important;
 }
 
-
+.cat-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.cat-slider .cat-item{
+    width: 12%;
+}
+.offer-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.offer-slider .cat-item{
+    width: 22%;
+}
+.trending-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.trending-slider .osahan-slider-item{
+    width: 24%;
+}
 /* Mobile Media */
 
 @media (max-width: 992px) {

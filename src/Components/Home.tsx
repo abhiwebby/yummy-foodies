@@ -261,7 +261,7 @@ export default class Home extends Component {
                 View all{" "}
                 <FeatherIcon.ChevronsRight
                   className="mr-2 bg-light rounded-pill p-2"
-                  size="32"
+                  size="16"
                 />
               </a>
             </div>
@@ -273,8 +273,8 @@ export default class Home extends Component {
                     <div className="star position-absolute">
                       <span className="badge badge-success">
                         <FeatherIcon.Star
-                          className="mr-2 bg-light rounded-pill p-2"
-                          size="32"
+                          className="mr-2 bg-light rounded-pill"
+                          size="16"
                         />
                         3.1 (300+)
                       </span>
@@ -282,8 +282,8 @@ export default class Home extends Component {
                     <div className="favourite-heart text-danger position-absolute">
                       <a href="#">
                         <FeatherIcon.Heart
-                          className="mr-2 bg-light rounded-pill p-2"
-                          size="20"
+                          className="mr-2 bg-light rounded-pill"
+                          size="16"
                         />
                       </a>
                     </div>
@@ -311,8 +311,8 @@ export default class Home extends Component {
                       <p className="text-gray mb-3 time">
                         <span className="bg-light text-dark rounded-sm pl-2 pb-1 pt-1 pr-2">
                           <FeatherIcon.Clock
-                            className="mr-2 bg-light rounded-pill p-2"
-                            size="20"
+                            className="mr-2 bg-light rounded-pill"
+                            size="16"
                           />
                           15–30 min
                         </span>{" "}
@@ -536,10 +536,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
@@ -589,10 +601,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
@@ -707,10 +731,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
@@ -762,10 +798,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
@@ -815,10 +863,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
@@ -868,10 +928,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
@@ -921,10 +993,22 @@ export default class Home extends Component {
                         <p className="text-gray mb-1 rating"></p>
                         <ul className="rating-stars list-unstyled">
                           <li>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
-                            <i className="feather-star star_active"></i>
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
+                            <FeatherIcon.Star
+                              size="12"
+                              className="star_active"
+                            />
                             <FeatherIcon.Star size="12" />
                           </li>
                         </ul>
