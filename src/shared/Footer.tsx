@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as FeatherIcon from "react-feather";
 
 import logo from "../assets/img/logo_web.png";
 import appstore from "../assets/img/appstore.png";
@@ -28,7 +29,7 @@ export default class Footer extends Component {
                         target="_blank"
                         href="#"
                       >
-                        <i className="feather-facebook"></i>
+                        <FeatherIcon.Facebook size="12" />
                       </a>
                       <a
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
@@ -36,7 +37,7 @@ export default class Footer extends Component {
                         target="_blank"
                         href="#"
                       >
-                        <i className="feather-instagram"></i>
+                        <FeatherIcon.Instagram size="12" />
                       </a>
                       <a
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
@@ -44,7 +45,7 @@ export default class Footer extends Component {
                         target="_blank"
                         href="#"
                       >
-                        <i className="feather-youtube"></i>
+                        <FeatherIcon.Youtube size="12" />
                       </a>
                       <a
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
@@ -52,7 +53,7 @@ export default class Footer extends Component {
                         target="_blank"
                         href="#"
                       >
-                        <i className="feather-twitter"></i>
+                        <FeatherIcon.Twitter size="12" />
                       </a>
                     </div>
                   </div>
@@ -386,7 +387,7 @@ export default class Footer extends Component {
 
         <section className="footer-copyright border-top py-3 bg-light">
           <div className="container d-flex align-items-center">
-            <p className="mb-0"> © 2020 Company All rights reserved </p>
+            <p className="mb-0"> © 2021 Yummy Foodies All rights reserved </p>
             <p className="text-muted mb-0 ml-auto d-flex align-items-center">
               <a href="#" className="d-block">
                 <img alt="#" src={appstore} height="40" />
