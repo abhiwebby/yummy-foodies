@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import logo from "../assets/img/logo_web.png";
+import appstore from "../assets/img/appstore.png";
+import playmarket from "../assets/img/playmarket.png";
 export default class Footer extends Component {
   render() {
     return (
@@ -10,11 +13,7 @@ export default class Footer extends Component {
               <aside className="col-md-4 footer-about">
                 <article className="d-flex pb-3">
                   <div>
-                    <img
-                      alt="#"
-                      src="img/logo_web.png"
-                      className="logo-footer mr-3"
-                    />
+                    <img alt="#" src={logo} className="logo-footer mr-3" />
                   </div>
                   <div>
                     <h6 className="title text-white">About Us</h6>
@@ -390,10 +389,10 @@ export default class Footer extends Component {
             <p className="mb-0"> © 2020 Company All rights reserved </p>
             <p className="text-muted mb-0 ml-auto d-flex align-items-center">
               <a href="#" className="d-block">
-                <img alt="#" src="img/appstore.png" height="40" />
+                <img alt="#" src={appstore} height="40" />
               </a>
               <a href="#" className="d-block ml-3">
-                <img alt="#" src="img/playmarket.png" height="40" />
+                <img alt="#" src={playmarket} height="40" />
               </a>
             </p>
           </div>

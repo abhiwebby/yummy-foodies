@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import * as FeatherIcon from "react-feather";
+
+import logo from "../assets/img/logo_web.png";
+import user_pic1 from "../assets/img/user/user_pic1.jpg";
 
 export default class Header extends Component {
   render() {
@@ -9,7 +13,7 @@ export default class Header extends Component {
             <div className="row align-items-center">
               <div className="col-1">
                 <a href="home.html" className="brand-wrap mb-0">
-                  <img alt="#" className="img-fluid" src="img/logo_web.png" />
+                  <img alt="#" className="img-fluid" src={logo} />
                 </a>
               </div>
               <div className="col-3 d-flex align-items-center m-none">
@@ -24,7 +28,11 @@ export default class Header extends Component {
                     aria-expanded="false"
                   >
                     <div>
-                      <i className="feather-map-pin mr-2 bg-light rounded-pill p-2 icofont-size"></i>
+                      <FeatherIcon.MapPin
+                        className="mr-2 bg-light rounded-pill p-2"
+                        size="32"
+                      />
+                      {/* <i className="feather-map-pin mr-2 bg-light rounded-pill p-2 icofont-size"></i> */}
                     </div>
                     <div>
                       <p className="text-muted mb-0 small">Select Location</p>
@@ -40,7 +48,7 @@ export default class Header extends Component {
                         <div className="input-group rounded shadow-sm overflow-hidden">
                           <div className="input-group-prepend">
                             <button className="border-0 btn btn-outline-secondary text-dark bg-white btn-block">
-                              <i className="feather-search"></i>
+                              <FeatherIcon.Search size="20" />
                             </button>
                           </div>
                           <input
@@ -53,7 +61,7 @@ export default class Header extends Component {
                       <div className="p-3 border-bottom">
                         <a href="home.html" className="text-decoration-none">
                           <p className="font-weight-bold text-primary m-0">
-                            <i className="feather-navigation"></i> New York, USA
+                            <FeatherIcon.Navigation size="20" /> New York, USA
                           </p>
                         </a>
                       </div>
@@ -78,7 +86,6 @@ export default class Header extends Component {
                             id="customRadio2"
                             name="location"
                             className="custom-control-input"
-                            checked
                           />
                           <label className="custom-control-label py-3 w-100 px-3">
                             India
@@ -141,7 +148,7 @@ export default class Header extends Component {
                     className="widget-header mr-4 text-dark"
                   >
                     <div className="icon d-flex align-items-center">
-                      <i className="feather-search h6 mr-2 mb-0"></i>{" "}
+                      <FeatherIcon.Search className="h6 mr-2 mb-0" size="20" />
                       <span>Search</span>
                     </div>
                   </a>
@@ -151,7 +158,7 @@ export default class Header extends Component {
                     className="widget-header mr-4 text-white btn bg-primary m-none"
                   >
                     <div className="icon d-flex align-items-center">
-                      <i className="feather-disc h6 mr-2 mb-0"></i>{" "}
+                      <FeatherIcon.Disc className="h6 mr-2 mb-0" size="20" />
                       <span>Offers</span>
                     </div>
                   </a>
@@ -161,7 +168,7 @@ export default class Header extends Component {
                     className="widget-header mr-4 text-dark m-none"
                   >
                     <div className="icon d-flex align-items-center">
-                      <i className="feather-user h6 mr-2 mb-0"></i>{" "}
+                      <FeatherIcon.User className="h6 mr-2 mb-0" size="20" />
                       <span>Sign in</span>
                     </div>
                   </a>
@@ -177,8 +184,8 @@ export default class Header extends Component {
                     >
                       <img
                         alt="#"
-                        src="img/user/1.jpg"
-                        className="img-fluid rounded-circle header-user mr-2 header-user"
+                        src={user_pic1}
+                        className="rounded-circle header-user mr-2"
                       />{" "}
                       Hi Osahan
                     </a>
@@ -212,7 +219,10 @@ export default class Header extends Component {
                     className="widget-header mr-4 text-dark"
                   >
                     <div className="icon d-flex align-items-center">
-                      <i className="feather-shopping-cart h6 mr-2 mb-0"></i>{" "}
+                      <FeatherIcon.ShoppingCart
+                        className="h6 mr-2 mb-0"
+                        size="20"
+                      />
                       <span>Cart</span>
                     </div>
                   </a>
