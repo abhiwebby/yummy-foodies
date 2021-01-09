@@ -1,8 +1,19 @@
 import React, { Component } from "react";
 import * as FeatherIcon from "react-feather";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/img/logo_web.png";
 import user_pic1 from "../assets/img/user/user_pic1.jpg";
+import Login from "../auth/Login";
+import Cart from "../cart/Cart";
+import Checkout from "../cart/Checkout";
+import Home from "../components/Home";
+import Contact from "../components/Contact";
+import Faqs from "../extras/Faqs";
+import Privacy from "../extras/Privacy";
+import Terms from "../extras/Terms";
+import Profile from "../user/Profile";
+import Search from "../search/Search";
 
 export default class Header extends Component {
   render() {
@@ -12,15 +23,15 @@ export default class Header extends Component {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-1">
-                <a href="home.html" className="brand-wrap mb-0">
-                  <img alt="#" className="img-fluid" src={logo} />
-                </a>
+                <Link to="/" className="brand-wrap mb-0">
+                  <img alt="logo" className="img-fluid" src={logo} />
+                </Link>
               </div>
               <div className="col-3 d-flex align-items-center m-none">
                 <div className="dropdown mr-3">
-                  <a
+                  <Link
                     className="text-dark dropdown-toggle d-flex align-items-center py-3"
-                    href="#"
+                    to="/location"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -38,7 +49,7 @@ export default class Header extends Component {
                       <p className="text-muted mb-0 small">Select Location</p>
                       Jawaddi Ludhiana...
                     </div>
-                  </a>
+                  </Link>
                   <div
                     className="dropdown-menu p-0 drop-loc"
                     aria-labelledby="navbarDropdown"
@@ -59,11 +70,11 @@ export default class Header extends Component {
                         </div>
                       </div>
                       <div className="p-3 border-bottom">
-                        <a href="home.html" className="text-decoration-none">
+                        <Link to="/home" className="text-decoration-none">
                           <p className="font-weight-bold text-primary m-0">
                             <FeatherIcon.Navigation size="20" /> New York, USA
                           </p>
-                        </a>
+                        </Link>
                       </div>
                       <div className="filter">
                         <h6 className="px-3 py-3 bg-light pb-1 m-0 border-bottom">
@@ -143,39 +154,36 @@ export default class Header extends Component {
 
               <div className="col-8">
                 <div className="d-flex align-items-center justify-content-end pr-5">
-                  <a
-                    href="search.html"
-                    className="widget-header mr-4 text-dark"
-                  >
+                  <Link to="/search" className="widget-header mr-4 text-dark">
                     <div className="icon d-flex align-items-center">
                       <FeatherIcon.Search className="h6 mr-2 mb-0" size="20" />
                       <span>Search</span>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="offers.html"
+                  <Link
+                    to="/offers"
                     className="widget-header mr-4 text-white btn bg-primary m-none"
                   >
                     <div className="icon d-flex align-items-center">
                       <FeatherIcon.Disc className="h6 mr-2 mb-0" size="20" />
                       <span>Offers</span>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="login.html"
+                  <Link
+                    to="/login"
                     className="widget-header mr-4 text-dark m-none"
                   >
                     <div className="icon d-flex align-items-center">
                       <FeatherIcon.User className="h6 mr-2 mb-0" size="20" />
                       <span>Sign in</span>
                     </div>
-                  </a>
+                  </Link>
 
                   <div className="dropdown mr-4 m-none">
-                    <a
-                      href="#"
+                    <Link
+                      to="/login"
                       className="dropdown-toggle text-dark py-3 d-block"
                       id="dropdownMenuButton"
                       data-toggle="dropdown"
@@ -183,41 +191,38 @@ export default class Header extends Component {
                       aria-expanded="false"
                     >
                       <img
-                        alt="#"
+                        alt="user image"
                         src={user_pic1}
                         className="rounded-circle header-user mr-2"
                       />{" "}
                       Hi Osahan
-                    </a>
+                    </Link>
                     <div
                       className="dropdown-menu dropdown-menu-right"
                       aria-labelledby="dropdownMenuButton"
                     >
-                      <a className="dropdown-item" href="profile.html">
+                      <Link to="/profile" className="dropdown-item">
                         My account
-                      </a>
-                      <a className="dropdown-item" href="faq.html">
+                      </Link>
+                      <Link to="/faqs" className="dropdown-item">
                         Delivery support
-                      </a>
-                      <a className="dropdown-item" href="contact-us.html">
+                      </Link>
+                      <Link to="/contact" className="dropdown-item">
                         Contant us
-                      </a>
-                      <a className="dropdown-item" href="terms.html">
+                      </Link>
+                      <Link to="/terms" className="dropdown-item">
                         Term of use
-                      </a>
-                      <a className="dropdown-item" href="privacy.html">
+                      </Link>
+                      <Link to="/privacy" className="dropdown-item">
                         Privacy policy
-                      </a>
-                      <a className="dropdown-item" href="login.html">
+                      </Link>
+                      <Link to="/login" className="dropdown-item">
                         Logout
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
-                  <a
-                    href="checkout.html"
-                    className="widget-header mr-4 text-dark"
-                  >
+                  <Link to="/cart" className="widget-header mr-4 text-dark">
                     <div className="icon d-flex align-items-center">
                       <FeatherIcon.ShoppingCart
                         className="h6 mr-2 mb-0"
@@ -225,10 +230,10 @@ export default class Header extends Component {
                       />
                       <span>Cart</span>
                     </div>
-                  </a>
-                  <a className="toggle" href="#">
-                    <span></span>
-                  </a>
+                  </Link>
+                  <button className="toggle">
+                    <FeatherIcon.Menu className="h6 mr-2 mb-0" size="20" />
+                  </button>
                 </div>
               </div>
             </div>
