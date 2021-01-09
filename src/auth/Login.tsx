@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import * as FeatherIcon from "react-feather";
 
 export default class Login extends Component {
   render() {
     return (
       <div className="login-page vh-100">
         <video loop muted id="vid">
-          <source src="img/bg.mp4" type="video/mp4" />
-          <source src="img/bg.mp4" type="video/ogg" />
+          <source src="assets/img/bg.mp4" type="video/mp4" />
+          <source src="assets/img/bg.mp4" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
         <div className="d-flex align-items-center justify-content-center vh-100">
@@ -42,19 +44,19 @@ export default class Login extends Component {
                 </button>
                 <div className="py-2">
                   <button className="btn btn-lg btn-facebook btn-block">
-                    <i className="feather-facebook"></i> Connect with Facebook
+                    <FeatherIcon.Facebook size="12" /> Connect with Facebook
                   </button>
                 </div>
               </form>
-              <a href="forgot_password.html" className="text-decoration-none">
+              <Link to="/forgot-password" className="text-decoration-none">
                 <p className="text-center">Forgot your password?</p>
-              </a>
+              </Link>
               <div className="d-flex align-items-center justify-content-center">
-                <a href="signup.html">
+                <Link to="/register">
                   <p className="text-center m-0">
                     Don't have an account? Sign up
                   </p>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

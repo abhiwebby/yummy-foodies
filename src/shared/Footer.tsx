@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import * as FeatherIcon from "react-feather";
 
 import logo from "../assets/img/logo_web.png";
@@ -11,11 +12,15 @@ export default class Footer extends Component {
         <div className="container">
           <section className="footer-top padding-y py-5">
             <div className="row">
-              <aside className="col-md-4 footer-about">
+              <aside className="col-md-5 footer-about">
                 <article className="d-flex pb-3">
-                  <div>
-                    <img alt="#" src={logo} className="logo-footer mr-3" />
-                  </div>
+                  <Link to="/">
+                    <img
+                      alt="logo image"
+                      src={logo}
+                      className="logo-footer mr-3"
+                    />
+                  </Link>
                   <div>
                     <h6 className="title text-white">About Us</h6>
                     <p className="text-muted">
@@ -23,361 +28,113 @@ export default class Footer extends Component {
                       Dell computer commercials in which a youth reports.
                     </p>
                     <div className="d-flex align-items-center">
-                      <a
+                      <Link
+                        to="/fblink/1"
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
                         title="Facebook"
-                        target="_blank"
-                        href="#"
                       >
                         <FeatherIcon.Facebook size="12" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
+                        to="insta/1"
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
                         title="Instagram"
                         target="_blank"
-                        href="#"
                       >
                         <FeatherIcon.Instagram size="12" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
+                        to="/youtube/1"
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
                         title="Youtube"
                         target="_blank"
-                        href="#"
                       >
                         <FeatherIcon.Youtube size="12" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
+                        to="/twitter/1"
                         className="btn btn-icon btn-outline-light mr-1 btn-sm"
                         title="Twitter"
                         target="_blank"
-                        href="#"
                       >
                         <FeatherIcon.Twitter size="12" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </article>
               </aside>
-              <aside className="col-sm-3 col-md-2 text-white">
-                <h6 className="title">Error Pages</h6>
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="not-found.html" className="text-muted">
-                      Not found
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="maintence.html" className="text-muted">
-                      Maintence
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="coming-soon.html" className="text-muted">
-                      Coming Soon
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-              <aside className="col-sm-3 col-md-2 text-white">
+              <aside className="col-md-2 col-sm-4 text-white">
                 <h6 className="title">Services</h6>
                 <ul className="list-unstyled hov_footer">
                   <li>
-                    {" "}
-                    <a href="faq.html" className="text-muted">
+                    <Link to="/faqs" className="text-muted">
                       Delivery Support
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="contact-us.html" className="text-muted">
+                    <Link to="/contact" className="text-muted">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="terms.html" className="text-muted">
+                    <Link to="/terms" className="text-muted">
                       Terms of use
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="privacy.html" className="text-muted">
+                    <Link to="/privacy" className="text-muted">
                       Privacy policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </aside>
-              <aside className="col-sm-3  col-md-2 text-white">
+              <aside className="col-md-2 col-sm-4 text-white">
                 <h6 className="title">For users</h6>
                 <ul className="list-unstyled hov_footer">
                   <li>
-                    {" "}
-                    <a href="login.html" className="text-muted">
-                      {" "}
-                      User Login{" "}
-                    </a>
+                    <Link to="/login" className="text-muted">
+                      User Login
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="signup.html" className="text-muted">
-                      {" "}
-                      User register{" "}
-                    </a>
+                    <Link to="/register" className="text-muted">
+                      User register
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="forgot_password.html" className="text-muted">
-                      {" "}
-                      Forgot Password{" "}
-                    </a>
+                    <Link to="/forgot-password" className="text-muted">
+                      Forgot Password
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="profile.html" className="text-muted">
-                      {" "}
-                      Account Setting{" "}
-                    </a>
+                    <Link to="/profile" className="text-muted">
+                      Account Setting
+                    </Link>
                   </li>
                 </ul>
               </aside>
-              <aside className="col-sm-3  col-md-2 text-white">
+              <aside className="col-md-2 col-sm-4  text-white">
                 <h6 className="title">More Pages</h6>
                 <ul className="list-unstyled hov_footer">
                   <li>
-                    {" "}
-                    <a href="trending.html" className="text-muted">
-                      {" "}
+                    <Link to="/trending" className="text-muted">
                       Trending{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="most_popular.html" className="text-muted">
-                      {" "}
+                    <Link to="/popular" className="text-muted">
                       Most popular{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="restaurant.html" className="text-muted">
-                      {" "}
+                    <Link to="/restaurant" className="text-muted">
                       Restaurant Details{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="favorites.html" className="text-muted">
-                      {" "}
+                    <Link to="/favorites" className="text-muted">
                       Favorites{" "}
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-            </div>
-          </section>
-
-          <section className="footer-center border-top padding-y py-5">
-            <h6 className="title text-white">Countries</h6>
-            <div className="row">
-              <aside className="col-sm-2 col-md-2 text-white">
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      India
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Indonesia
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Ireland
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Italy
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Lebanon
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-              <aside className="col-sm-2 col-md-2 text-white">
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Malaysia
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      New Zealand
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Philippines
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Poland
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Portugal
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-              <aside className="col-sm-2 col-md-2 text-white">
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Australia
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Brasil
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Canada
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Chile
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Czech Republic
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-              <aside className="col-sm-2 col-md-2 text-white">
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Turkey
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      UAE
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      United Kingdom
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      United States
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Sri Lanka
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-              <aside className="col-sm-2 col-md-2 text-white">
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Qatar
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Singapore
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Slovakia
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      South Africa
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Green Land
-                    </a>
-                  </li>
-                </ul>
-              </aside>
-              <aside className="col-sm-2 col-md-2 text-white">
-                <ul className="list-unstyled hov_footer">
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Pakistan
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Bangladesh
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Bhutaan
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#" className="text-muted">
-                      Nepal
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </aside>
@@ -387,14 +144,14 @@ export default class Footer extends Component {
 
         <section className="footer-copyright border-top py-3 bg-light">
           <div className="container d-flex align-items-center">
-            <p className="mb-0"> © 2021 Yummy Foodies. All rights reserved </p>
+            <p className="mb-0"> © 2021 Yummy Foodies. All Rights Reserved </p>
             <p className="text-muted mb-0 ml-auto d-flex align-items-center">
-              <a href="#" className="d-block">
-                <img alt="#" src={appstore} height="40" />
-              </a>
-              <a href="#" className="d-block ml-3">
-                <img alt="#" src={playmarket} height="40" />
-              </a>
+              <Link to="/" className="d-block">
+                <img alt="appstore image" src={appstore} height="40" />
+              </Link>
+              <Link to="/" className="d-block ml-3">
+                <img alt="playstore image" src={playmarket} height="40" />
+              </Link>
             </p>
           </div>
         </section>

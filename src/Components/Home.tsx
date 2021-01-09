@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import * as FeatherIcon from "react-feather";
 
 import FriesPic from "../assets/img/icons/Fries.png";
@@ -42,23 +43,23 @@ import CategoryService from "../services/DataService";
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="mainContent">
         <div className="osahan-home-page">
           <div className="bg-primary p-3 d-none">
             <div className="text-white">
               <div className="title d-flex align-items-center">
-                <a className="toggle" href="#">
+                <Link className="toggle" to="#">
                   <span></span>
-                </a>
+                </Link>
                 <h4 className="font-weight-bold m-0 pl-5">Browse</h4>
-                <a
+                <Link
                   className="text-white font-weight-bold ml-auto"
                   data-toggle="modal"
                   data-target="#exampleModal"
-                  href="#"
+                  to="#"
                 >
                   Filter
-                </a>
+                </Link>
               </div>
             </div>
             <div className="input-group mt-3 rounded shadow-sm overflow-hidden">
@@ -81,85 +82,85 @@ export default class Home extends Component {
           <div className="container">
             <div className="cat-slider">
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={FriesPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Fries</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={PizzaPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Pizza</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={BurgerPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Burger</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={SandwichPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Sandwich</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={CoffeePic} className="img-fluid mb-2" />
                   <p className="m-0 small">Coffee</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={SteakPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Steak</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={ColaCanPic} className="img-fluid mb-2" />
                   <p className="m-0 small">ColaCan</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={BreakfastPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Breakfast</p>
-                </a>
+                </Link>
               </div>
               <div className="cat-item px-1 py-3">
-                <a
+                <Link
                   className="bg-white rounded d-block p-2 text-center shadow-sm"
-                  href="trending.html"
+                  to="trending"
                 >
                   <img alt="#" src={SaladPic} className="img-fluid mb-2" />
                   <p className="m-0 small">Salad</p>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -168,88 +169,67 @@ export default class Home extends Component {
             <div className="container">
               <div className="offer-slider">
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic1}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic2}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic3}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic4}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic2}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic1}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="cat-item px-1 py-3">
-                  <a
-                    className="d-block text-center shadow-sm"
-                    href="trending.html"
-                  >
+                  <Link className="d-block text-center shadow-sm" to="trending">
                     <img
                       alt="#"
                       src={offer_pic3}
                       className="img-fluid rounded"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -258,13 +238,13 @@ export default class Home extends Component {
           <div className="container">
             <div className="pt-4 pb-2 title d-flex align-items-center">
               <h5 className="m-0">Trending this week</h5>
-              <a className="font-weight-bold ml-auto" href="trending.html">
+              <Link className="font-weight-bold ml-auto" to="trending">
                 View all{" "}
                 <FeatherIcon.ChevronsRight
                   className="mr-2 bg-light rounded-pill p-2"
                   size="16"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="trending-slider">
@@ -281,30 +261,30 @@ export default class Home extends Component {
                       </span>
                     </div>
                     <div className="favourite-heart text-danger position-absolute">
-                      <a href="#">
+                      <Link to="#">
                         <FeatherIcon.Heart
                           className="mr-2 bg-light rounded-pill"
                           size="16"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="member-plan position-absolute">
                       <span className="badge badge-dark">Promoted</span>
                     </div>
-                    <a href="restaurant.html">
+                    <Link to="restaurant">
                       <img
                         alt="#"
                         src={trending_pic1}
                         className="img-fluid item-img w-100"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="p-3 position-relative">
                     <div className="list-card-body">
                       <h6 className="mb-1">
-                        <a href="restaurant.html" className="text-black">
+                        <Link to="restaurant" className="text-black">
                           Famous Dave's Bar-B-Que
-                        </a>
+                        </Link>
                       </h6>
                       <p className="text-gray mb-3">
                         Vegetarian • Indian • Pure veg
@@ -343,27 +323,27 @@ export default class Home extends Component {
                       </span>
                     </div>
                     <div className="favourite-heart text-danger position-absolute">
-                      <a href="#">
+                      <Link to="#">
                         <FeatherIcon.Heart size="20" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="member-plan position-absolute">
                       <span className="badge badge-dark">Promoted</span>
                     </div>
-                    <a href="restaurant.html">
+                    <Link to="restaurant">
                       <img
                         alt="#"
                         src={trending_pic2}
                         className="img-fluid item-img w-100"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="p-3 position-relative">
                     <div className="list-card-body">
                       <h6 className="mb-1">
-                        <a href="restaurant.html" className="text-black">
+                        <Link to="restaurant" className="text-black">
                           Thai Famous Cuisine
-                        </a>
+                        </Link>
                       </h6>
                       <p className="text-gray mb-3">
                         North Indian • Indian • Pure veg
@@ -395,27 +375,27 @@ export default class Home extends Component {
                       </span>
                     </div>
                     <div className="favourite-heart text-danger position-absolute">
-                      <a href="#">
+                      <Link to="#">
                         <FeatherIcon.Heart size="20" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="member-plan position-absolute">
                       <span className="badge badge-dark">Promoted</span>
                     </div>
-                    <a href="restaurant.html">
+                    <Link to="restaurant">
                       <img
                         alt="#"
                         src={trending_pic3}
                         className="img-fluid item-img w-100"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="p-3 position-relative">
                     <div className="list-card-body">
                       <h6 className="mb-1">
-                        <a href="restaurant.html" className="text-black">
+                        <Link to="restaurant" className="text-black">
                           The osahan Restaurant
-                        </a>
+                        </Link>
                       </h6>
                       <p className="text-gray mb-3">
                         North • Hamburgers • Pure veg
@@ -446,27 +426,27 @@ export default class Home extends Component {
                       </span>
                     </div>
                     <div className="favourite-heart text-danger position-absolute">
-                      <a href="#">
+                      <Link to="#">
                         <FeatherIcon.Heart size="20" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="member-plan position-absolute">
                       <span className="badge badge-dark">Promoted</span>
                     </div>
-                    <a href="restaurant.html">
+                    <Link to="restaurant">
                       <img
                         alt="#"
                         src={trending_pic4}
                         className="img-fluid item-img w-100"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="p-3 position-relative">
                     <div className="list-card-body">
                       <h6 className="mb-1">
-                        <a href="restaurant.html" className="text-black">
+                        <Link to="restaurant" className="text-black">
                           Thai Famous Cuisine
-                        </a>
+                        </Link>
                       </h6>
                       <p className="text-gray mb-3">
                         North Indian • Indian • Pure veg
@@ -492,9 +472,9 @@ export default class Home extends Component {
 
             <div className="py-3 title d-flex align-items-center">
               <h5 className="m-0">Most popular</h5>
-              <a className="font-weight-bold ml-auto" href="most_popular.html">
+              <Link className="font-weight-bold ml-auto" to="most_popular">
                 26 places <i className="feather-chevrons-right"></i>
-              </a>
+              </Link>
             </div>
 
             <div className="most_popular">
@@ -509,27 +489,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic1}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             The osahan Restaurant
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           • North • Hamburgers
@@ -574,27 +554,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic2}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             Thai Famous Indian Cuisine
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           • Indian • Pure veg
@@ -639,27 +619,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic3}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             The osahan Restaurant
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           • Hamburgers • Pure veg
@@ -704,27 +684,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic4}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             Bite Me Now Sandwiches
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           American • Pure veg
@@ -771,27 +751,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic5}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             The osahan Restaurant
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           • North • Hamburgers
@@ -836,27 +816,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic6}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             Thai Famous Indian Cuisine
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           • Indian • Pure veg
@@ -901,27 +881,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic7}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             The osahan Restaurant
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           • Hamburgers • Pure veg
@@ -966,27 +946,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={popular_pic8}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             Bite Me Now Sandwiches
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-1 small">
                           American • Pure veg
@@ -1027,9 +1007,9 @@ export default class Home extends Component {
 
             <div className="pt-2 pb-3 title d-flex align-items-center">
               <h5 className="m-0">Most sales</h5>
-              <a className="font-weight-bold ml-auto" href="#">
+              <Link className="font-weight-bold ml-auto" to="#">
                 26 places <i className="feather-chevrons-right"></i>
-              </a>
+              </Link>
             </div>
 
             <div className="most_sale">
@@ -1043,27 +1023,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={sales_pic1}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             The osahan Restaurant
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-3">
                           North • Hamburgers • Pure veg
@@ -1094,27 +1074,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={sales_pic2}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             Thai Famous Cuisine
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-3">
                           North Indian • Indian • Pure veg
@@ -1145,27 +1125,27 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div className="favourite-heart text-danger position-absolute">
-                        <a href="#">
+                        <Link to="#">
                           <FeatherIcon.Heart size="20" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="member-plan position-absolute">
                         <span className="badge badge-dark">Promoted</span>
                       </div>
-                      <a href="restaurant.html">
+                      <Link to="restaurant">
                         <img
                           alt="#"
                           src={sales_pic3}
                           className="img-fluid item-img w-100"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="p-3 position-relative">
                       <div className="list-card-body">
                         <h6 className="mb-1">
-                          <a href="restaurant.html" className="text-black">
+                          <Link to="restaurant" className="text-black">
                             The osahan Restaurant
-                          </a>
+                          </Link>
                         </h6>
                         <p className="text-gray mb-3">
                           North • Hamburgers • Pure veg
@@ -1195,58 +1175,58 @@ export default class Home extends Component {
         <div className="osahan-menu-fotter fixed-bottom bg-white px-3 py-2 text-center d-none">
           <div className="row">
             <div className="col selected">
-              <a
-                href="home.html"
+              <Link
+                to="/"
                 className="text-danger small font-weight-bold text-decoration-none"
               >
                 <p className="h4 m-0">
                   <i className="feather-home text-danger"></i>
                 </p>
                 Home
-              </a>
+              </Link>
             </div>
             <div className="col">
-              <a
-                href="most_popular.html"
+              <Link
+                to="/most_popular"
                 className="text-dark small font-weight-bold text-decoration-none"
               >
                 <p className="h4 m-0">
                   <i className="feather-map-pin"></i>
                 </p>
                 Trending
-              </a>
+              </Link>
             </div>
             <div className="col bg-white rounded-circle mt-n4 px-3 py-2">
               <div className="bg-danger rounded-circle mt-n0 shadow">
-                <a
-                  href="checkout.html"
+                <Link
+                  to="/checkout"
                   className="text-white small font-weight-bold text-decoration-none"
                 >
                   <i className="feather-shopping-cart"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
-              <a
-                href="favorites.html"
+              <Link
+                to="favorites"
                 className="text-dark small font-weight-bold text-decoration-none"
               >
                 <p className="h4 m-0">
                   <FeatherIcon.Heart size="20" />
                 </p>
                 Favorites
-              </a>
+              </Link>
             </div>
             <div className="col">
-              <a
-                href="profile.html"
+              <Link
+                to="/profile"
                 className="text-dark small font-weight-bold text-decoration-none"
               >
                 <p className="h4 m-0">
                   <i className="feather-user"></i>
                 </p>
                 Profile
-              </a>
+              </Link>
             </div>
           </div>
         </div>
