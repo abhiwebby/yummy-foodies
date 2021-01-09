@@ -37,6 +37,7 @@ import popular_pic8 from "../assets/img/popular8.png";
 import sales_pic1 from "../assets/img/sales1.png";
 import sales_pic2 from "../assets/img/sales2.png";
 import sales_pic3 from "../assets/img/sales3.png";
+import CategoryService from "../services/DataService";
 
 export default class Home extends Component {
   render() {

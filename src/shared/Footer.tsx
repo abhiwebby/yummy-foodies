@@ -387,7 +387,7 @@ export default class Footer extends Component {
 
         <section className="footer-copyright border-top py-3 bg-light">
           <div className="container d-flex align-items-center">
-            <p className="mb-0"> © 2021 Yummy Foodies All rights reserved </p>
+            <p className="mb-0"> © 2021 Yummy Foodies. All rights reserved </p>
             <p className="text-muted mb-0 ml-auto d-flex align-items-center">
               <a href="#" className="d-block">
                 <img alt="#" src={appstore} height="40" />
