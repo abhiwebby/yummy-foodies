@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import * as FeatherIcon from "react-feather";
 
 export default class SignUp extends Component {
   render() {
@@ -52,15 +54,15 @@ export default class SignUp extends Component {
                 </button>
                 <div className="py-2">
                   <button className="btn btn-facebook btn-lg btn-block">
-                    <i className="feather-facebook"></i> Connect with Facebook
+                    <FeatherIcon.Facebook size="12" /> Connect with Facebook
                   </button>
                 </div>
               </form>
             </div>
             <div className="new-acc d-flex align-items-center justify-content-center">
-              <a href="login.html">
+              <Link to="/login">
                 <p className="text-center m-0">Already an account? Sign in</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

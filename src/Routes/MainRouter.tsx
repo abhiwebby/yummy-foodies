@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import ForgotPassword from "../auth/ForgotPassword";
 import Login from "../auth/Login";
-import PageNotFound from "../auth/PageNotFound";
 import SignUp from "../auth/SignUp";
 import Verification from "../auth/Verification";
 import Cart from "../cart/Cart";
@@ -36,11 +35,15 @@ import Order from "../order/Order";
 import CartItem from "../cart/CartItem";
 import AddToCart from "../cart/AddToCart";
 import PlaceOrder from "../cart/PlaceOrder";
+import Popular from "../extras/Popular";
+import Trending from "../extras/Trending";
+import Favourites from "../extras/Favourites";
+import PageNotFound from "../auth/PageNotFound";
 
 export default class MainRouter extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Header />
         <Switch>
           {/* Authentication */}
@@ -85,13 +88,18 @@ export default class MainRouter extends Component {
 
           {/* Extras */}
           <Route path="/offers" component={Offers} />
+          <Route path="/popular" component={Popular} />
+          <Route path="/trending" component={Trending} />
+          <Route path="/favourites" component={Favourites} />
           <Route path="/terms" component={Terms} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/faqs" component={Faqs} />
-          <Route path="/" component={Home} />
+          <Route path="/pagenotfound" component={PageNotFound} />
+          <Route path="/" exact component={Home} />
+          <Redirect to="/pagenotfound" />
         </Switch>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

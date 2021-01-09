@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import * as FeatherIcon from "react-feather";
 
 export default class Search extends Component {
   render() {
@@ -6,9 +8,9 @@ export default class Search extends Component {
       <div>
         <div className="d-none">
           <div className="bg-primary p-3 d-flex align-items-center">
-            <a className="toggle togglew toggle-2" href="#">
+            <Link className="toggle togglew toggle-2" to="/search">
               <span></span>
-            </a>
+            </Link>
             <h4 className="font-weight-bold m-0 text-white">Search</h4>
           </div>
         </div>
@@ -31,30 +33,31 @@ export default class Search extends Component {
 
               <ul className="nav nav-tabs border-0" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
-                  <a
+                  <Link
                     className="nav-link active border-0 bg-light text-dark rounded"
                     id="home-tab"
                     data-toggle="tab"
-                    href="#home"
+                    to="/restaurant"
                     role="tab"
                     aria-controls="home"
                     aria-selected="true"
                   >
-                    <i className="feather-home mr-2"></i>Restaurants (8)
-                  </a>
+                    <FeatherIcon.Home className="mr-2" size="16" /> Restaurants
+                    (8)
+                  </Link>
                 </li>
                 <li className="nav-item" role="presentation">
-                  <a
+                  <Link
                     className="nav-link border-0 bg-light text-dark rounded ml-3"
                     id="profile-tab"
                     data-toggle="tab"
-                    href="#profile"
+                    to="/profile"
                     role="tab"
                     aria-controls="profile"
                     aria-selected="false"
                   >
-                    <i className="feather-disc mr-2"></i>Dishes (23)
-                  </a>
+                    <FeatherIcon.Disc className="mr-2" size="16" /> Dishes (23)
+                  </Link>
                 </li>
               </ul>
               <div className="tab-content" id="myTabContent">
@@ -75,30 +78,27 @@ export default class Search extends Component {
                               </span>
                             </div>
                             <div className="favourite-heart text-danger position-absolute">
-                              <a href="#">
-                                <i className="feather-heart"></i>
-                              </a>
+                              <Link to="/favourites">
+                                <FeatherIcon.Heart size="16" />
+                              </Link>
                             </div>
                             <div className="member-plan position-absolute">
                               <span className="badge badge-dark">Promoted</span>
                             </div>
-                            <a href="restaurant.html">
+                            <Link to="/restaurants">
                               <img
-                                alt="#"
+                                alt="image"
                                 src="img/popular1.png"
                                 className="img-fluid item-img w-100"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="p-3 position-relative">
                             <div className="list-card-body">
                               <h6 className="mb-1">
-                                <a
-                                  href="restaurant.html"
-                                  className="text-black"
-                                >
+                                <Link to="/restaurant" className="text-black">
                                   The osahan Restaurant
-                                </a>
+                                </Link>
                               </h6>
                               <p className="text-gray mb-1 small">
                                 • North • Hamburgers
@@ -131,30 +131,27 @@ export default class Search extends Component {
                               </span>
                             </div>
                             <div className="favourite-heart text-danger position-absolute">
-                              <a href="#">
+                              <Link to="#">
                                 <i className="feather-heart"></i>
-                              </a>
+                              </Link>
                             </div>
                             <div className="member-plan position-absolute">
                               <span className="badge badge-dark">Promoted</span>
                             </div>
-                            <a href="restaurant.html">
+                            <Link to="/restaurant">
                               <img
                                 alt="#"
                                 src="img/popular2.png"
                                 className="img-fluid item-img w-100"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="p-3 position-relative">
                             <div className="list-card-body">
                               <h6 className="mb-1">
-                                <a
-                                  href="restaurant.html"
-                                  className="text-black"
-                                >
+                                <Link to="/restaurant" className="text-black">
                                   Thai Famous Indian Cuisine
-                                </a>
+                                </Link>
                               </h6>
                               <p className="text-gray mb-1 small">
                                 • Indian • Pure veg
@@ -187,30 +184,27 @@ export default class Search extends Component {
                               </span>
                             </div>
                             <div className="favourite-heart text-danger position-absolute">
-                              <a href="#">
+                              <Link to="#">
                                 <i className="feather-heart"></i>
-                              </a>
+                              </Link>
                             </div>
                             <div className="member-plan position-absolute">
                               <span className="badge badge-dark">Promoted</span>
                             </div>
-                            <a href="restaurant.html">
+                            <Link to="/restaurant">
                               <img
                                 alt="#"
                                 src="img/popular3.png"
                                 className="img-fluid item-img w-100"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="p-3 position-relative">
                             <div className="list-card-body">
                               <h6 className="mb-1">
-                                <a
-                                  href="restaurant.html"
-                                  className="text-black"
-                                >
+                                <Link to="/restaurant" className="text-black">
                                   The osahan Restaurant
-                                </a>
+                                </Link>
                               </h6>
                               <p className="text-gray mb-1 small">
                                 • Hamburgers • Pure veg
@@ -243,30 +237,27 @@ export default class Search extends Component {
                               </span>
                             </div>
                             <div className="favourite-heart text-danger position-absolute">
-                              <a href="#">
+                              <Link to="#">
                                 <i className="feather-heart"></i>
-                              </a>
+                              </Link>
                             </div>
                             <div className="member-plan position-absolute">
                               <span className="badge badge-dark">Promoted</span>
                             </div>
-                            <a href="restaurant.html">
+                            <Link to="/restaurant">
                               <img
                                 alt="#"
                                 src="img/popular4.png"
                                 className="img-fluid item-img w-100"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="p-3 position-relative">
                             <div className="list-card-body">
                               <h6 className="mb-1">
-                                <a
-                                  href="restaurant.html"
-                                  className="text-black"
-                                >
+                                <Link to="/restaurant" className="text-black">
                                   Bite Me Now Sandwiches
-                                </a>
+                                </Link>
                               </h6>
                               <p className="text-gray mb-1 small">
                                 American • Pure veg
@@ -323,58 +314,58 @@ export default class Search extends Component {
           <div className="osahan-menu-fotter fixed-bottom bg-white px-3 py-2 text-center d-none">
             <div className="row">
               <div className="col">
-                <a
-                  href="home.html"
+                <Link
+                  to="/"
                   className="text-dark small font-weight-bold text-decoration-none"
                 >
                   <p className="h4 m-0">
                     <i className="feather-home"></i>
                   </p>
                   Home
-                </a>
+                </Link>
               </div>
               <div className="col selected">
-                <a
-                  href="trending.html"
+                <Link
+                  to="/trending"
                   className="text-danger small font-weight-bold text-decoration-none"
                 >
                   <p className="h4 m-0">
                     <i className="feather-map-pin text-danger"></i>
                   </p>
                   Trending
-                </a>
+                </Link>
               </div>
               <div className="col bg-white rounded-circle mt-n4 px-3 py-2">
                 <div className="bg-danger rounded-circle mt-n0 shadow">
-                  <a
-                    href="checkout.html"
+                  <Link
+                    to="/checkout"
                     className="text-white small font-weight-bold text-decoration-none"
                   >
                     <i className="feather-shopping-cart"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col">
-                <a
-                  href="favorites.html"
+                <Link
+                  to="/favorites"
                   className="text-dark small font-weight-bold text-decoration-none"
                 >
                   <p className="h4 m-0">
                     <i className="feather-heart"></i>
                   </p>
                   Favorites
-                </a>
+                </Link>
               </div>
               <div className="col">
-                <a
-                  href="profile.html"
+                <Link
+                  to="/profile"
                   className="text-dark small font-weight-bold text-decoration-none"
                 >
                   <p className="h4 m-0">
                     <i className="feather-user"></i>
                   </p>
                   Profile
-                </a>
+                </Link>
               </div>
             </div>
           </div>
